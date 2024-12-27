@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>notice</title>
+    <link href="/2024/12/28/notice/"/>
+    <url>/2024/12/28/notice/</url>
+    
+    <content type="html"><![CDATA[<h1 id="文档，维基，github-readme"><a href="#文档，维基，github-readme" class="headerlink" title="文档，维基，github readme"></a>文档，维基，github readme</h1><p>学一个东西先看文档，小项目在readme</p><p>中型搜索文档，大型看维基（搜索 项目+docs）</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>test01</title>
+    <link href="/2024/12/28/test01/"/>
+    <url>/2024/12/28/test01/</url>
+    
+    <content type="html"><![CDATA[<h1 id="test01"><a href="#test01" class="headerlink" title="test01"></a>test01</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> torch<br><span class="hljs-keyword">import</span> torch.nn <span class="hljs-keyword">as</span> nn<br><span class="hljs-keyword">import</span> torch.optim <span class="hljs-keyword">as</span> optim<br><span class="hljs-keyword">import</span> time<br><br><span class="hljs-comment"># 确认CUDA和cuDNN是否可用</span><br><span class="hljs-keyword">assert</span> torch.cuda.is_available(), <span class="hljs-string">&quot;CUDA is not available&quot;</span><br><span class="hljs-keyword">assert</span> torch.backends.cudnn.enabled, <span class="hljs-string">&quot;cuDNN is not enabled&quot;</span><br><br><span class="hljs-comment"># 设置设备</span><br>device = torch.device(<span class="hljs-string">&quot;cuda&quot;</span>)<br><br><span class="hljs-comment"># 定义一个简单的卷积神经网络</span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">ConvNet</span>(nn.Module):<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self</span>):<br>        <span class="hljs-built_in">super</span>(ConvNet, <span class="hljs-variable language_">self</span>).__init__()<br>        <span class="hljs-variable language_">self</span>.conv1 = nn.Conv2d(<span class="hljs-number">3</span>, <span class="hljs-number">32</span>, kernel_size=<span class="hljs-number">3</span>, padding=<span class="hljs-number">1</span>)<br>        <span class="hljs-variable language_">self</span>.conv2 = nn.Conv2d(<span class="hljs-number">32</span>, <span class="hljs-number">64</span>, kernel_size=<span class="hljs-number">3</span>, padding=<span class="hljs-number">1</span>)<br>        <span class="hljs-variable language_">self</span>.pool = nn.MaxPool2d(<span class="hljs-number">2</span>, <span class="hljs-number">2</span>)<br>        <span class="hljs-variable language_">self</span>.fc1 = nn.Linear(<span class="hljs-number">64</span> * <span class="hljs-number">8</span> * <span class="hljs-number">8</span>, <span class="hljs-number">512</span>)<br>        <span class="hljs-variable language_">self</span>.fc2 = nn.Linear(<span class="hljs-number">512</span>, <span class="hljs-number">10</span>)<br><br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">forward</span>(<span class="hljs-params">self, x</span>):<br>        x = <span class="hljs-variable language_">self</span>.pool(torch.relu(<span class="hljs-variable language_">self</span>.conv1(x)))<br>        x = <span class="hljs-variable language_">self</span>.pool(torch.relu(<span class="hljs-variable language_">self</span>.conv2(x)))<br>        x = x.view(-<span class="hljs-number">1</span>, <span class="hljs-number">64</span> * <span class="hljs-number">8</span> * <span class="hljs-number">8</span>)<br>        x = torch.relu(<span class="hljs-variable language_">self</span>.fc1(x))<br>        x = <span class="hljs-variable language_">self</span>.fc2(x)<br>        <span class="hljs-keyword">return</span> x<br><br><span class="hljs-comment"># 实例化网络并将其移至GPU</span><br>model = ConvNet().to(device)<br><br><span class="hljs-comment"># 定义损失函数和优化器</span><br>criterion = nn.CrossEntropyLoss()<br>optimizer = optim.Adam(model.parameters(), lr=<span class="hljs-number">0.001</span>)<br><br><span class="hljs-comment"># 生成一些随机输入和标签进行训练</span><br><span class="hljs-comment"># 假设输入是32x32的彩色图像，批量大小为64</span><br>inputs = torch.randn(<span class="hljs-number">64</span>, <span class="hljs-number">3</span>, <span class="hljs-number">32</span>, <span class="hljs-number">32</span>).to(device)<br>labels = torch.randint(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>, (<span class="hljs-number">64</span>,)).to(device)<br><br><span class="hljs-comment"># 训练模型</span><br>model.train()  <span class="hljs-comment"># 设置为训练模式</span><br>start_time = time.time()  <span class="hljs-comment"># 记录开始时间</span><br>target_duration = <span class="hljs-number">300</span>  <span class="hljs-comment"># 设置目标运行时间（秒）</span><br>epochs = <span class="hljs-number">0</span>  <span class="hljs-comment"># 初始化epoch计数器</span><br>report_interval = <span class="hljs-number">1000</span>  <span class="hljs-comment"># 设置报告间隔</span><br><br><span class="hljs-comment"># 使用for循环代替while True循环</span><br><span class="hljs-keyword">while</span> time.time() - start_time &lt; target_duration:<br>    optimizer.zero_grad()  <span class="hljs-comment"># 清除旧的梯度</span><br>    outputs = model(inputs)  <span class="hljs-comment"># 前向传播</span><br>    loss = criterion(outputs, labels)  <span class="hljs-comment"># 计算损失</span><br>    loss.backward()  <span class="hljs-comment"># 反向传播</span><br>    optimizer.step()  <span class="hljs-comment"># 更新参数</span><br>    epochs += <span class="hljs-number">1</span>  <span class="hljs-comment"># 更新epoch计数器</span><br><br>    <span class="hljs-comment"># 每1000轮打印一次</span><br>    <span class="hljs-keyword">if</span> epochs % report_interval == <span class="hljs-number">0</span>:<br>        <span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;Epoch: <span class="hljs-subst">&#123;epochs&#125;</span>, Loss: <span class="hljs-subst">&#123;loss.item()&#125;</span>&quot;</span>)<br><br><span class="hljs-comment"># 循环结束后打印结果</span><br>end_time = time.time()  <span class="hljs-comment"># 记录结束时间</span><br>elapsed_time = end_time - start_time  <span class="hljs-comment"># 计算总耗时</span><br><span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;Training finished. Total time: <span class="hljs-subst">&#123;elapsed_time:<span class="hljs-number">.2</span>f&#125;</span> seconds, Epochs: <span class="hljs-subst">&#123;epochs&#125;</span>&quot;</span>)<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>我的网站</title>
+    <link href="/2024/12/27/%E6%88%91%E7%9A%84%E7%BD%91%E7%AB%99/"/>
+    <url>/2024/12/27/%E6%88%91%E7%9A%84%E7%BD%91%E7%AB%99/</url>
+    
+    <content type="html"><![CDATA[<h2 id="my-blog"><a href="#my-blog" class="headerlink" title="my_blog"></a>my_blog</h2><p><a href="https://junfenzhang1.github.io/" title="我的博客">我的博客</a><br><a href="https://www.318649213.xyz/" title="我的其他网站">我的其他网站</a></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>website</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="/2024/12/27/hello-world/"/>
+    <url>/2024/12/27/hello-world/</url>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  
+</search>
