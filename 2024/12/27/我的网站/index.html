@@ -27,7 +27,7 @@
 <meta property="og:description" content="my_blog我的博客我的其他网站">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-12-27T12:58:36.000Z">
-<meta property="article:modified_time" content="2024-12-27T22:04:28.260Z">
+<meta property="article:modified_time" content="2024-12-27T22:04:28.000Z">
 <meta property="article:author" content="chino1229">
 <meta property="article:tag" content="website">
 <meta name="twitter:card" content="summary_large_image">
@@ -98,7 +98,7 @@
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
-      <strong>Fluid</strong>
+      <strong>chino1229</strong>
     </a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
@@ -370,7 +370,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/12/28/test01/" title="test01">
+                      <a href="/2024/12/27/test01/" title="test01">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">test01</span>
                         <span class="visible-mobile">上一篇</span>
@@ -379,12 +379,6 @@
                   </article>
                   <article class="post-next col-6">
                     
-                    
-                      <a href="/2024/12/27/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
                     
                   </article>
                 </div>
@@ -483,6 +477,21 @@
 
   
 
+
+
+  <script>
+  Fluid.utils.createScript('https://lib.baomitu.com/mermaid/8.14.0/mermaid.min.js', function() {
+    mermaid.initialize({"theme":"default"});
+
+    Fluid.utils.listenDOMLoaded(function() {
+      Fluid.events.registerRefreshCallback(function() {
+        if ('mermaid' in window) {
+          mermaid.init();
+        }
+      });
+    });
+  });
+</script>
 
 
 
