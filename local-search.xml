@@ -21,7 +21,7 @@
     <link href="/2024/12/28/notice/"/>
     <url>/2024/12/28/notice/</url>
     
-    <content type="html"><![CDATA[<h1 id="文档，维基，github-readme"><a href="#文档，维基，github-readme" class="headerlink" title="文档，维基，github readme"></a>文档，维基，github readme</h1><p>学一个东西先看文档，小项目在readme</p><p>中型搜索文档，大型看维基（搜索 项目+docs，也有的直接放在github界面code区右上角的链接处）</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="文档，维基，github-readme"><a href="#文档，维基，github-readme" class="headerlink" title="文档，维基，github readme"></a>文档，维基，github readme</h2><p>学一个东西先看文档，小项目在readme</p><p>中型搜索文档，大型看维基（搜索 项目+docs，也有的直接放在github界面code区右上角的链接处）</p><h2 id="反代的坑"><a href="#反代的坑" class="headerlink" title="反代的坑"></a>反代的坑</h2><ol><li>nginx proxy_pass路径带&#x2F;与不带&#x2F;有重大区别，带&#x2F;可以example1&#x2F;blog-&gt;example2&#x2F;(example1&#x2F;blog&#x2F;path-&gt;example2&#x2F;path)，不带&#x2F;只能example1&#x2F;blog-&gt;example2&#x2F;blog</li><li>我部署的博客反代正常，但是跳转出现了问题，他是对&#x2F;的绝对路径，不是对于当前位置的相对路径,这种情况不要用带&#x2F;反代，在博客项目中可以调整root为&#x2F;blog&#x2F;（与反代url一致），或者直接新开一个域名（&#x2F;开始反代）</li><li>clouflare rule（origin rule）也可以反代</li></ol><h2 id="c-的坑"><a href="#c-的坑" class="headerlink" title="c++的坑"></a>c++的坑</h2><p>1.最近在折腾c++的opencv，发现windows上cmake，vcpkg默认都是msvc工具链，如果要用mingw，需要我们修改配置为mingw工具链<br>2.官网以及scoop下载的windows的opencv，都是msvc版本，但是opencv的mingw版本与msvc版本有区别，mingw版本的需要我们手动编译才能使用</p>]]></content>
     
     
     <categories>
