@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>虚拟机桥接</title>
+    <link href="/2025/01/06/%E8%99%9A%E6%8B%9F%E6%9C%BA%E6%A1%A5%E6%8E%A5/"/>
+    <url>/2025/01/06/%E8%99%9A%E6%8B%9F%E6%9C%BA%E6%A1%A5%E6%8E%A5/</url>
+    
+    <content type="html"><![CDATA[<h1 id="虚拟机桥接"><a href="#虚拟机桥接" class="headerlink" title="虚拟机桥接"></a>虚拟机桥接</h1><ol><li>wifi因为协议，硬件设计等原因，无法建立交换机，不能用hvper-v的桥接，能用vm的桥接(依然由很多问题)。有线网卡可以正常桥接</li><li>有线网卡桥接后不能正常运行（可能？？）重启后可以。</li><li>更新解决20问题，换源解决50问题，重启解决90问题，重装系统解决99问题，重买电脑解决100问题。</li><li>折腾的时间算休息时间，本质就是玩闹，不是学习，超过30min的异常不再弄了，选择主流配置，非必要的任务可以不学。</li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>notice</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>notice</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hello World</title>
     <link href="/2024/12/29/hello-world/"/>
     <url>/2024/12/29/hello-world/</url>
