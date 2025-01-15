@@ -4,11 +4,36 @@
   
   
   <entry>
+    <title>net-notice</title>
+    <link href="/2025/01/16/net-notice/"/>
+    <url>/2025/01/16/net-notice/</url>
+    
+    <content type="html"><![CDATA[<ol><li>不知道怎么回事,再clash下网络热点如果不能上网可以这么做<ul><li>不科学上网,clash关闭tun模式,将wifi,以太网共享到热点网络</li><li>科学上网,clash开启tun模式,将tun网卡共享到热点网络</li></ul></li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>notice</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>notice</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>感悟</title>
     <link href="/2025/01/08/%E6%84%9F%E6%82%9F/"/>
     <url>/2025/01/08/%E6%84%9F%E6%82%9F/</url>
     
-    <content type="html"><![CDATA[<ol><li>很多事情就是利益相关，断人财路如杀人父母，你是评不出对错的。</li></ol>]]></content>
+    <content type="html"><![CDATA[<ol><li>很多事情就是利益相关，断人财路如杀人父母，你是评不出对错的。</li><li>用得到的才去学，用不到的一般不用学。我们在大多数领域是小白。</li></ol>]]></content>
     
     
     
