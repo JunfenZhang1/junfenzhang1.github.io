@@ -19,22 +19,21 @@
   <meta name="author" content="chino1229">
   <meta name="keywords" content="">
   
-    <meta name="description" content="虚拟机桥接 有的wifi（比如我的）因为协议，硬件设计等原因，无法建立交换机，不能用hvper-v的桥接，能用vm的桥接(依然由很多问题，好像会ip冲突,虚拟机挤张宿主机的ip，导致ip变动)。有线网卡可以正常桥接。 有线网卡桥接后不能正常运行（可能？？）重启后可以。 hvper-v的default是nat（内部）模式，其他新建的nat都是dhcp，但很可能不成功，需要自己手动配 更新解决20问题">
+    <meta name="description" content="在 MiKTeX 中使用中文需要配置 LaTeX 以支持中文排版。常用的中文支持方案包括 CTeX 宏包、XeLaTeX&#x2F;LuaLaTeX + fontspec 等。以下是详细的配置和使用方法：  1. 使用 CTeX 宏包CTeX 宏包是一个专门为中文排版设计的宏包，支持多种中文环境和字体。 安装 CTeX 宏包 打开 MiKTeX Console。 在 “Packages” 选项卡中">
 <meta property="og:type" content="article">
-<meta property="og:title" content="虚拟机桥接">
-<meta property="og:url" content="http://example.com/2025/01/06/%E8%99%9A%E6%8B%9F%E6%9C%BA%E6%A1%A5%E6%8E%A5/index.html">
+<meta property="og:title" content="latex-miktex-chinese">
+<meta property="og:url" content="http://example.com/2025/01/19/latex-miktex-chinese/index.html">
 <meta property="og:site_name" content="我的博客">
-<meta property="og:description" content="虚拟机桥接 有的wifi（比如我的）因为协议，硬件设计等原因，无法建立交换机，不能用hvper-v的桥接，能用vm的桥接(依然由很多问题，好像会ip冲突,虚拟机挤张宿主机的ip，导致ip变动)。有线网卡可以正常桥接。 有线网卡桥接后不能正常运行（可能？？）重启后可以。 hvper-v的default是nat（内部）模式，其他新建的nat都是dhcp，但很可能不成功，需要自己手动配 更新解决20问题">
+<meta property="og:description" content="在 MiKTeX 中使用中文需要配置 LaTeX 以支持中文排版。常用的中文支持方案包括 CTeX 宏包、XeLaTeX&#x2F;LuaLaTeX + fontspec 等。以下是详细的配置和使用方法：  1. 使用 CTeX 宏包CTeX 宏包是一个专门为中文排版设计的宏包，支持多种中文环境和字体。 安装 CTeX 宏包 打开 MiKTeX Console。 在 “Packages” 选项卡中">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-01-05T19:38:50.000Z">
-<meta property="article:modified_time" content="2025-01-05T20:05:25.355Z">
+<meta property="article:published_time" content="2025-01-19T15:14:19.000Z">
+<meta property="article:modified_time" content="2025-01-19T15:14:40.395Z">
 <meta property="article:author" content="chino1229">
-<meta property="article:tag" content="notice">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>虚拟机桥接 - 我的博客</title>
+  <title>latex-miktex-chinese - 我的博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -224,7 +223,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="虚拟机桥接"></span>
+            <span id="subtitle" data-typed-text="latex-miktex-chinese"></span>
           
         </div>
 
@@ -235,8 +234,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-01-06 03:38" pubdate>
-          2025年1月6日 凌晨
+        <time datetime="2025-01-19 23:14" pubdate>
+          2025年1月19日 晚上
         </time>
       </span>
     
@@ -247,7 +246,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          431 字
+          844 字
         
       </span>
     
@@ -258,7 +257,7 @@
         
         
         
-          4 分钟
+          8 分钟
         
       </span>
     
@@ -295,26 +294,88 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">虚拟机桥接</h1>
+            <h1 id="seo-header">latex-miktex-chinese</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="虚拟机桥接"><a href="#虚拟机桥接" class="headerlink" title="虚拟机桥接"></a>虚拟机桥接</h1><ol>
-<li>有的wifi（比如我的）因为协议，硬件设计等原因，无法建立交换机，不能用hvper-v的桥接，能用vm的桥接(依然由很多问题，好像会ip冲突,虚拟机挤张宿主机的ip，导致ip变动)。有线网卡可以正常桥接。</li>
-<li>有线网卡桥接后不能正常运行（可能？？）重启后可以。</li>
-<li>hvper-v的default是nat（内部）模式，其他新建的nat都是dhcp，但很可能不成功，需要自己手动配</li>
-<li>更新解决20问题，换源解决50问题，重启解决90问题，重装系统解决99问题，重买电脑解决100问题。</li>
-<li>折腾的时间算休息时间，本质就是玩闹，不是学习，超过30min的异常不再弄了，选择主流配置，非必要的任务可以不学。</li>
+                <p>在 MiKTeX 中使用中文需要配置 LaTeX 以支持中文排版。常用的中文支持方案包括 <strong>CTeX 宏包</strong>、<strong>XeLaTeX&#x2F;LuaLaTeX + fontspec</strong> 等。以下是详细的配置和使用方法：</p>
+<hr>
+<h3 id="1-使用-CTeX-宏包"><a href="#1-使用-CTeX-宏包" class="headerlink" title="1. 使用 CTeX 宏包"></a>1. <strong>使用 CTeX 宏包</strong></h3><p>CTeX 宏包是一个专门为中文排版设计的宏包，支持多种中文环境和字体。</p>
+<h4 id="安装-CTeX-宏包"><a href="#安装-CTeX-宏包" class="headerlink" title="安装 CTeX 宏包"></a>安装 CTeX 宏包</h4><ol>
+<li>打开 MiKTeX Console。</li>
+<li>在 <strong>“Packages”</strong> 选项卡中搜索 <code>ctex</code>。</li>
+<li>找到 <code>ctex</code> 宏包后，点击右侧的 <strong>“+”</strong> 按钮进行安装。</li>
 </ol>
-<h1 id="hvper-v的显卡与声卡问题"><a href="#hvper-v的显卡与声卡问题" class="headerlink" title="hvper-v的显卡与声卡问题"></a>hvper-v的显卡与声卡问题</h1><ol>
-<li>显卡：windows保证版本尽量相同，linux内核要相同（要是wsl有的内核版本，但不用使用wsl的内核），编译directx内核模块，</li>
-<li>显卡需要拷贝驱动，linux还需要添加链接库</li>
-<li>windows声音可以解决，但linux没有声卡很难解决（vgpu不能解决，gpu直通以及其他手段才能解决）（linux几乎不需要影音需求，声音处理可以传给windows），usb窗口不能用，usb驱动器可用。</li>
-<li>linux vgpu后必须远程桌面，自身不能加载桌面。</li>
-<li>windows增强会话就可以共享剪贴板，驱动器，usb驱动器，linux必须远程桌面才能共享剪贴板，驱动器，usb驱动器，都不能识别usb串口</li>
-<li>wsl不支持访问usb设备，需要自己编译内核</li>
+<h4 id="编写中文文档"><a href="#编写中文文档" class="headerlink" title="编写中文文档"></a>编写中文文档</h4><p>在 LaTeX 文档中使用 <code>ctex</code> 宏包，并指定文档类为 <code>ctexart</code>、<code>ctexrep</code>、<code>ctexbook</code> 或 <code>ctexbeamer</code>。例如：</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs latex"><span class="hljs-keyword">\documentclass</span>[UTF8]&#123;ctexart&#125;<br><br><span class="hljs-keyword">\begin</span>&#123;document&#125;<br><span class="hljs-keyword">\title</span>&#123;中文标题&#125;<br><span class="hljs-keyword">\author</span>&#123;作者&#125;<br><span class="hljs-keyword">\date</span>&#123;<span class="hljs-keyword">\today</span>&#125;<br><span class="hljs-keyword">\maketitle</span><br><br><span class="hljs-keyword">\section</span>&#123;中文章节&#125;<br>这是一段中文内容。<br><span class="hljs-keyword">\end</span>&#123;document&#125;<br></code></pre></td></tr></table></figure>
+<ul>
+<li><strong>注意</strong>：确保文件保存为 UTF-8 编码。</li>
+</ul>
+<h4 id="编译文档"><a href="#编译文档" class="headerlink" title="编译文档"></a>编译文档</h4><p>使用 <strong>pdfLaTeX</strong> 编译文档：</p>
+<ol>
+<li>在编辑器（如 TeXworks 或 TeXstudio）中，选择编译引擎为 <strong>pdfLaTeX</strong>。</li>
+<li>点击编译按钮，生成 PDF 文件。</li>
 </ol>
+<hr>
+<h3 id="2-使用-XeLaTeX-fontspec"><a href="#2-使用-XeLaTeX-fontspec" class="headerlink" title="2. 使用 XeLaTeX + fontspec"></a>2. <strong>使用 XeLaTeX + fontspec</strong></h3><p>XeLaTeX 直接支持 Unicode 和系统字体，适合处理中文文档。</p>
+<h4 id="安装所需宏包"><a href="#安装所需宏包" class="headerlink" title="安装所需宏包"></a>安装所需宏包</h4><ol>
+<li>打开 MiKTeX Console。</li>
+<li>安装以下宏包：<ul>
+<li><code>fontspec</code>：用于加载系统字体。</li>
+<li><code>xeCJK</code>：用于处理中日韩文字（可选，但推荐）。</li>
+</ul>
+</li>
+</ol>
+<h4 id="编写中文文档-1"><a href="#编写中文文档-1" class="headerlink" title="编写中文文档"></a>编写中文文档</h4><p>使用 <code>article</code> 文档类，并加载 <code>fontspec</code> 和 <code>xeCJK</code> 宏包。例如：</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs latex"><span class="hljs-keyword">\documentclass</span>&#123;article&#125;<br><span class="hljs-keyword">\usepackage</span>&#123;fontspec&#125;<br><span class="hljs-keyword">\usepackage</span>&#123;xeCJK&#125;<br><br><span class="hljs-keyword">\setCJKmainfont</span>&#123;SimSun&#125; <span class="hljs-comment">% 设置中文字体（例如宋体）</span><br><br><span class="hljs-keyword">\begin</span>&#123;document&#125;<br><span class="hljs-keyword">\title</span>&#123;中文标题&#125;<br><span class="hljs-keyword">\author</span>&#123;作者&#125;<br><span class="hljs-keyword">\date</span>&#123;<span class="hljs-keyword">\today</span>&#125;<br><span class="hljs-keyword">\maketitle</span><br><br><span class="hljs-keyword">\section</span>&#123;中文章节&#125;<br>这是一段中文内容。<br><span class="hljs-keyword">\end</span>&#123;document&#125;<br></code></pre></td></tr></table></figure>
+<ul>
+<li><strong>注意</strong>：确保文件保存为 UTF-8 编码。</li>
+</ul>
+<h4 id="编译文档-1"><a href="#编译文档-1" class="headerlink" title="编译文档"></a>编译文档</h4><p>使用 <strong>XeLaTeX</strong> 编译文档：</p>
+<ol>
+<li>在编辑器（如 TeXworks 或 TeXstudio）中，选择编译引擎为 <strong>XeLaTeX</strong>。</li>
+<li>点击编译按钮，生成 PDF 文件。</li>
+</ol>
+<hr>
+<h3 id="3-使用-LuaLaTeX-fontspec"><a href="#3-使用-LuaLaTeX-fontspec" class="headerlink" title="3. 使用 LuaLaTeX + fontspec"></a>3. <strong>使用 LuaLaTeX + fontspec</strong></h3><p>LuaLaTeX 是另一种支持 Unicode 和系统字体的方式，功能与 XeLaTeX 类似。</p>
+<h4 id="安装所需宏包-1"><a href="#安装所需宏包-1" class="headerlink" title="安装所需宏包"></a>安装所需宏包</h4><ol>
+<li>打开 MiKTeX Console。</li>
+<li>安装以下宏包：<ul>
+<li><code>fontspec</code>：用于加载系统字体。</li>
+<li><code>luatexja</code>：用于处理中日韩文字（可选，但推荐）。</li>
+</ul>
+</li>
+</ol>
+<h4 id="编写中文文档-2"><a href="#编写中文文档-2" class="headerlink" title="编写中文文档"></a>编写中文文档</h4><p>使用 <code>article</code> 文档类，并加载 <code>fontspec</code> 和 <code>luatexja</code> 宏包。例如：</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs latex"><span class="hljs-keyword">\documentclass</span>&#123;article&#125;<br><span class="hljs-keyword">\usepackage</span>&#123;fontspec&#125;<br><span class="hljs-keyword">\usepackage</span>&#123;luatexja&#125;<br><br><span class="hljs-keyword">\setmainjfont</span>&#123;SimSun&#125; <span class="hljs-comment">% 设置中文字体（例如宋体）</span><br><br><span class="hljs-keyword">\begin</span>&#123;document&#125;<br><span class="hljs-keyword">\title</span>&#123;中文标题&#125;<br><span class="hljs-keyword">\author</span>&#123;作者&#125;<br><span class="hljs-keyword">\date</span>&#123;<span class="hljs-keyword">\today</span>&#125;<br><span class="hljs-keyword">\maketitle</span><br><br><span class="hljs-keyword">\section</span>&#123;中文章节&#125;<br>这是一段中文内容。<br><span class="hljs-keyword">\end</span>&#123;document&#125;<br></code></pre></td></tr></table></figure>
+<ul>
+<li><strong>注意</strong>：确保文件保存为 UTF-8 编码。</li>
+</ul>
+<h4 id="编译文档-2"><a href="#编译文档-2" class="headerlink" title="编译文档"></a>编译文档</h4><p>使用 <strong>LuaLaTeX</strong> 编译文档：</p>
+<ol>
+<li>在编辑器（如 TeXworks 或 TeXstudio）中，选择编译引擎为 <strong>LuaLaTeX</strong>。</li>
+<li>点击编译按钮，生成 PDF 文件。</li>
+</ol>
+<hr>
+<h3 id="4-常见问题"><a href="#4-常见问题" class="headerlink" title="4. 常见问题"></a>4. <strong>常见问题</strong></h3><h4 id="（1）字体无法加载"><a href="#（1）字体无法加载" class="headerlink" title="（1）字体无法加载"></a>（1）<strong>字体无法加载</strong></h4><ul>
+<li>确保系统中安装了所需的中文字体（如宋体、黑体等）。</li>
+<li>在 Windows 中，可以通过 <code>fc-list</code> 命令查看已安装的字体：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">fc-list :lang=zh<br></code></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="（2）编译报错"><a href="#（2）编译报错" class="headerlink" title="（2）编译报错"></a>（2）<strong>编译报错</strong></h4><ul>
+<li>确保文件保存为 UTF-8 编码。</li>
+<li>如果使用 <code>ctex</code> 宏包，确保文档类为 <code>ctexart</code>、<code>ctexrep</code> 等。</li>
+</ul>
+<h4 id="（3）MiKTeX-自动安装宏包失败"><a href="#（3）MiKTeX-自动安装宏包失败" class="headerlink" title="（3）MiKTeX 自动安装宏包失败"></a>（3）<strong>MiKTeX 自动安装宏包失败</strong></h4><ul>
+<li>手动安装所需宏包（如 <code>ctex</code>、<code>fontspec</code>、<code>xeCJK</code> 等）。</li>
+</ul>
+<hr>
+<h3 id="5-总结"><a href="#5-总结" class="headerlink" title="5. 总结"></a>5. <strong>总结</strong></h3><ul>
+<li><strong>CTeX 宏包</strong>：适合初学者，简单易用，支持 pdfLaTeX 编译。</li>
+<li><strong>XeLaTeX + fontspec</strong>：支持系统字体，适合需要自定义字体的文档。</li>
+<li><strong>LuaLaTeX + fontspec</strong>：功能与 XeLaTeX 类似，但基于 LuaTeX 引擎。</li>
+</ul>
+<p>根据您的需求选择合适的方案，配置完成后即可在 MiKTeX 中轻松编写和排版中文文档。</p>
 
                 
               </div>
@@ -323,34 +384,6 @@
             <div>
               <div class="post-metas my-3">
   
-    <div class="post-meta mr-3 d-flex align-items-center">
-      <i class="iconfont icon-category"></i>
-      
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/notice/" class="category-chain-item">notice</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-    </div>
-  
-  
-    <div class="post-meta">
-      <i class="iconfont icon-tags"></i>
-      
-        <a href="/tags/notice/" class="print-no-link">#notice</a>
-      
-    </div>
   
 </div>
 
@@ -360,8 +393,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>虚拟机桥接</div>
-      <div>http://example.com/2025/01/06/虚拟机桥接/</div>
+      <div>latex-miktex-chinese</div>
+      <div>http://example.com/2025/01/19/latex-miktex-chinese/</div>
     </div>
     <div class="license-meta">
       
@@ -373,7 +406,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年1月6日</div>
+          <div>2025年1月19日</div>
         </div>
       
       
@@ -405,18 +438,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/01/08/%E6%84%9F%E6%82%9F/" title="感悟">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">感悟</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/12/29/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/2025/01/16/net-notice/" title="net-notice">
+                        <span class="hidden-mobile">net-notice</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -439,7 +466,7 @@
         var options = Object.assign(
           {"clientID":"Ov23liw0H2FBurvN7cjK","clientSecret":"467e85dd7c7e863977fd08fc93368a2000b3d6a4","repo":"junfenzhang1.github.io","owner":"JunfenZhang1","admin":["JunfenZhang1"],"language":"zh-CN","labels":["gitalk"],"perPage":10,"pagerDirection":"last","distractionFreeMode":false,"createIssueManually":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token"},
           {
-            id: 'e69daf8bab8a8c11dd84235c93d88ce2'
+            id: 'ba5a9fcb0ab0e65aeab3ca647e37d61e'
           }
         )
         var gitalk = new Gitalk(options);
